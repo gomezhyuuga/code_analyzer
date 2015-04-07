@@ -1,0 +1,14 @@
+Un profesor quiere dividir su salón de clases en equipos de trabajo. Escribe un programa
+que pida al profesor ingresar el tamaño de la clase y el número de integrantes por equipo.
+El programa debe calcular el número de equipos que se pueden formar y el número de
+estudiantes que deberán formar un equipo más pequeño.
+
+(1, 3), (2, 3)
+
+([20, 3],[6, 2]), ([32, 3], [10, 2]), ([35, 5], [7, 0]) 
+
+input, print, //, %
+
+numero_estudiantes, numero_integrantes
+
+numero_equipos, equipo_pequenio

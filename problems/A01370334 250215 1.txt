@@ -1,0 +1,16 @@
+Escribe un programa que muestre la siguiente información:
+- Tu nombre
+- Tu dirección, con ciudad y estado
+- Tu número de teléfono
+- Tu carrera
+Usa las variables: nombre, direccion, numero_telefono, carrera
+
+(1, 3)
+
+None
+
+print
+
+None
+
+nombre, direccion, numero_telefono, carrera

@@ -1,0 +1,11 @@
+Escribe un enunciado que asigne la suma de 10 y 14 a la variable total.
+
+(1, 2), (2, 1)
+
+([10, 14],[24])
+
++
+
+None
+
+None

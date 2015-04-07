@@ -1,0 +1,14 @@
+Una compañía ha determinado que su ganancia anual es 23% de las ventas totales. Escribe
+un programa que pregunte al usuario el monto proyectado de ventas totales, y luego
+muestre la ganancia que se obtendrá de ese monto.
+Usa las variables ventas_totales y ganancias.
+
+(1, 3), (2, 2)
+
+([100],[23]), ([150],[34.5]), ([200],[46])
+
+print, input, *
+
+ventas_totales
+
+ganancias

@@ -1,0 +1,12 @@
+Escribe un programa que pida al usuario el radio de una esfera, y calcule su diámetro,
+área superficial y volumen. Muestra los datos calculados.
+
+(1, 3), (2, 3)
+
+([5],[10, 314.1592, 523.5987]), ([6], [12, 452.3893, 904.7786]), ([10], [20, 1256.6370, 4188.7902]) 
+
+input, print, *, /, **
+
+radio
+
+diametro, area, volumen

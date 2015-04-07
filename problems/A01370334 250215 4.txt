@@ -1,0 +1,16 @@
+Asumiendo que no hay accidentes o retrasos, la distancia que un carro se desplaza por
+una carretera puede ser calculada usando la fórmula: Distancia = velocidad x tiempo.
+Un carro viaja a 60 millas por hora. Escribe un programa que muestre lo siguiente:
+- La distancia que el carro viajará en 5 horas
+- La distancia que el carro viajará en 8 horas
+- La distancia que el carro viajará en 12 horas
+
+(1, 3), (2, 2)
+
+([],[300]), ([],[480]), ([],[720])
+
+print, *
+
+None
+
+distancia

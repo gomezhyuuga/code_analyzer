@@ -1,0 +1,12 @@
+Escribe un programa que asigne 0 a la variable b y asigna 1 a la variable c si la
+variable a es menor que 10.
+
+(1, 3), (3, 1), (6, 1)
+
+([2], [0, 1]), ([4], [0, 1]), ([10], [0, 0]), ([20], [0, 0])
+
+input, >, if
+
+a
+
+b, c

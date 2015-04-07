@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="skeleton/css/normalize.css">
+  <link rel="stylesheet" href="skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utils.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <!-- Standard Headings -->
+    <h1>Plataforma xyz</h1>
+    <hr>
+    <h2>Problema #<%= problem.number %></h2>
+    <p>
+      <button data-toggle='#problem_details'>&gt;&gt; Detalles del problema:</button>
+    </p>
+    <div class="row hide well" id="problem_details">
+      <div class="one-half column">
+        <h5>Temas</h5>
+        <ul>
+          <li><a href="#">Variables</a></li>
+          <li><a href="#">Formato de strings</a></li>
+        </ul>
+        
+      </div>
+      <div class="one-half column">
+        <h5>Detalles</h5>
+        <p>
+          <strong>Dificultad: </strong> <%= Math.floor(Math.random() * 10) + 1 %> <br>
+          <strong>Fecha de envío: </strong> <%= problem.creation_date %> <br>
+          <strong>Usuario: </strong> <a href="#"><%= problem.user  %></a>
+        </p>
+      </div>
+    </div>
+    <h4>Descripción</h4>
+    <p>
+      <%= problem.description %>
+    </p>
+    <p>
+      Usa las variables: <code><%= problem.out_vars.join(', ') %></code>.
+    </p>
+    <!-- <strong>Ejemplo</strong>
+    <pre><code>Ganancias: $4320</code></pre> -->
+
+    <div class="row">
+      <div class="one-half column">
+        <p>Escribe aquí tu código:</p>
+        <form method="POST" action="/code" id="form_code">
+<textarea name="user_code" id="user_code" cols="30" rows="10"
+  class="u-full-width">
+print 2+2
+print "hola mundo"
+</textarea>
+          <br>
+
+          <p>
+            <button type="submit" class="button-primary">
+              <i class="fa fa-fw fa-paper-plane"></i>
+              Enviar
+            </button>
+          </p>
+        </form>
+        <!-- END CODE -->
+      </div>
+      <div class="one-half column">
+        <p><strong>Output:</strong></p>
+
+        <pre class="output"><code id="code_output"></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Plataforma xyz | <a href="#">ITESM CEM</a> &copy; 2015</p>
+      <p>
+        <strong>Contacto: </strong> <a href="mailto:juresti@itesm.mx">juresti@itesm.mx</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script> 
+  <script src="js/spin.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/utils.js"></script>
+
+  <!-- Create a simple CodeMirror instance -->
+  <script src="codemirror/lib/codemirror.js"></script>
+  <script src="codemirror/mode/python/python.js"></script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+Escribe un programa que muestre "La velocidad es normal" si la variable velocidad
+está dentro del rango de 40 a 100. Si el valor está fuera del rango, mostrar
+"La velocidad no es normal"
+
+(1, 3), (3, 1), (6, 2)
+
+([30], ["La velocidad no es normal"]), ([45], ["La velocidad es normal"]), ([110], ["La velocidad no es normal"])
+
+input, >, <, if, else
+
+velocidad
+
+None
